@@ -1,0 +1,51 @@
+* {
+  font-family: sans-serif;
+}
+
+.formContainer {
+  margin: 150px auto;
+  padding: 10px 0;
+  max-width: 550px;
+  min-width: 320px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid rgb(151, 147, 147);
+  border-radius: 10px;
+}
+
+.lableFormSign {
+  padding: 5px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.spanFormSign {
+  font-weight: bold;
+  width: 40%;
+  color: rgb(36, 31, 31);
+}
+
+.inputFormSign {
+  width: 40%;
+  padding: 5px 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.btnFormSign {
+  background-color: rgb(9, 172, 236);
+  border: 1px solid rgb(5, 133, 184);
+  color: white;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px 0;
+  width: 89%;
+  padding: 5px 0;
+  cursor: pointer;
+}

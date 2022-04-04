@@ -62,6 +62,7 @@ class SignUpForm extends Component {
             placeholder="password confirmation"
           />
         </lable>
+        <button className={styles.btnFormSign}> Sign Up</button>
       </form>
     );
   }
