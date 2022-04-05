@@ -51,15 +51,29 @@ class SignUpForm extends Component {
   };
 
   hanlePasswordConfirmation = ({ target: { value } }) => {
+    const { password } = this.state;
     this.setState({
       passwordConfirmation: value,
-      isPasswordConfirmationValid: value === this.state.password,
+      isPasswordConfirmationValid: value === password,
     });
   };
 
   handleSubmit = (e) => {
+    const {
+      isUsernameValid,
+      isEmailValid,
+      isPasswordValid,
+      isPasswordConfirmationValid,
+    } = this.state;
+
     e.preventDefault();
-    this.setState(INITIAL_VALUES);
+
+    isUsernameValid &&
+    isEmailValid &&
+    isPasswordValid &&
+    isPasswordConfirmationValid
+      ? this.setState(INITIAL_VALUES)
+      : alert("Invalid input enter");
   };
 
   render() {
